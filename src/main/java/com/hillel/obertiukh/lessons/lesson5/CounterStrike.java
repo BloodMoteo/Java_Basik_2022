@@ -8,40 +8,123 @@ public class CounterStrike {
         String teamName = scanner.nextLine();
         String firstName = teamName;
         System.out.println("Ввести кількість фрагів для першого гравця: ");
-       /* if (scanner.hasNextInt()){
-            int one = scanner.nextInt();
-            System.out.println(one);
-        }else if ()
-
-        */
-        int firstFrag = scanner.nextInt();
+        int firstFrag = 0;
+        for (;;){
+            if (scanner.hasNextInt()){
+                firstFrag = scanner.nextInt();
+                break;
+            }else {
+                System.out.println("Wrong data! Please tray again");
+                scanner.nextLine();
+            }
+        }
         System.out.println("Ввести кількість фрагів для другого гравця: ");
-        int twoFrag = scanner.nextInt();
+        int twoFrag = 0;
+        for (;;){
+            if (scanner.hasNextInt()){
+                twoFrag = scanner.nextInt();
+                break;
+            }else {
+                System.out.println("Wrong data! Please tray again");
+                scanner.nextLine();
+            }
+        }
         System.out.println("Ввести кількість фрагів для третього гравця: ");
-        int threeFrag = scanner.nextInt();
+        int threeFrag = 0;
+        for (;;){
+            if (scanner.hasNextInt()){
+                threeFrag = scanner.nextInt();
+                break;
+            }else {
+                System.out.println("Wrong data! Please tray again");
+                scanner.nextLine();
+            }
+        }
         System.out.println("Ввести кількість фрагів для четвертого гравця: ");
-        int fourFrag = scanner.nextInt();
+        int fourFrag = 0;
+        for (;;){
+            if (scanner.hasNextInt()){
+                fourFrag = scanner.nextInt();
+                break;
+            }else {
+                System.out.println("Wrong data! Please tray again");
+                scanner.nextLine();
+            }
+        }
         System.out.println("Ввести кількість фрагів для пятого гравця: ");
-        int fiveFrag = scanner.nextInt();
+        int fiveFrag = 0;
+        for (;;){
+            if (scanner.hasNextInt()){
+                fiveFrag = scanner.nextInt();
+                break;
+            }else {
+                System.out.println("Wrong data! Please tray again");
+                scanner.nextLine();
+            }
+        }
         int midKills = (firstFrag + twoFrag + threeFrag + fourFrag + fiveFrag)/5;
         int kills = (firstFrag + twoFrag + threeFrag + fourFrag + fiveFrag);
 
-        System.out.println();
-
-        Scanner two = new Scanner(System.in);
+        scanner.nextLine();
+       // Scanner two = new Scanner(System.in);
         System.out.println("Імя другої команди: ");
-        String teamName2 = two.nextLine();
+        String teamName2 = scanner.nextLine();
         String twoName = teamName2;
         System.out.println("Ввести кількість фрагів для першого гравця: ");
-        int firstFrag1 = two.nextInt();
+        int firstFrag1 = 0;
+        for (;;){
+            if (scanner.hasNextInt()){
+                firstFrag1 = scanner.nextInt();
+                break;
+            }else {
+                System.out.println("Wrong data! Please tray again");
+                scanner.nextLine();
+            }
+        }
         System.out.println("Ввести кількість фрагів для другого гравця: ");
-        int twoFrag1 = two.nextInt();
+        int twoFrag1 = 0;
+        for (;;){
+            if (scanner.hasNextInt()){
+                twoFrag1 = scanner.nextInt();
+                break;
+            }else {
+                System.out.println("Wrong data! Please tray again");
+                scanner.nextLine();
+            }
+        }
         System.out.println("Ввести кількість фрагів для третього гравця: ");
-        int threeFrag1 = two.nextInt();
+        int threeFrag1 = 0;
+        for (;;){
+            if (scanner.hasNextInt()){
+                threeFrag1 = scanner.nextInt();
+                break;
+            }else {
+                System.out.println("Wrong data! Please tray again");
+                scanner.nextLine();
+            }
+        }
         System.out.println("Ввести кількість фрагів для четвертого гравця: ");
-        int fourFrag1 = two.nextInt();
+        int fourFrag1 = 0;
+        for (;;){
+            if (scanner.hasNextInt()){
+                fourFrag1 = scanner.nextInt();
+                break;
+            }else {
+                System.out.println("Wrong data! Please tray again");
+                scanner.nextLine();
+            }
+        }
         System.out.println("Ввести кількість фрагів для пятого гравця: ");
-        int fiveFrag1 = two.nextInt();
+        int fiveFrag1 = 0;
+        for (;;){
+            if (scanner.hasNextInt()){
+                fiveFrag1 = scanner.nextInt();
+                break;
+            }else {
+                System.out.println("Wrong data! Please tray again");
+                scanner.nextLine();
+            }
+        }
         int midKills1 = (fiveFrag1 + twoFrag1 + threeFrag1 + fourFrag1 + firstFrag1)/5;
         int kills1 = (fiveFrag1 + twoFrag1 + threeFrag1 + fourFrag1 + firstFrag1);
 
