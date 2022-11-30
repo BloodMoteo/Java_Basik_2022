@@ -77,15 +77,27 @@ public class main {
 
 
         */
+        /*
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter some integer:");
         if (scanner.hasNextInt()){
             int a = scanner.nextInt();
             System.out.println(a);
+            //break; stop ciklum
         }else {
             scanner.nextLine();
         }
-
+        */
+        int num1 = 0;
+        int num2 = 1;
+        int sum;
+        System.out.print(num1 + " " + num2 + " ");
+        for (int i = 0; i < 45; i++) {
+            sum = num1 + num2;
+            System.out.print(sum + " ");
+            num1 = num2;
+            num2 = sum;
+        }
 
 
     }

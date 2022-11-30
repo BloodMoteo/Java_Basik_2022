@@ -1,15 +1,17 @@
 package com.hillel.obertiukh.lessons.lesson5;
+
 import java.util.Scanner;
 
-public class CounterStrike {
+public class CounterStrikeWhile {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Імя першої команди: ");
         String teamName = scanner.nextLine();
         String firstName = teamName;
         System.out.println("Ввести кількість фрагів для першого гравця: ");
         int firstFrag = 0;
-        for (;;){
+        while (true){
             if (scanner.hasNextInt()){
                 firstFrag = scanner.nextInt();
                 break;
@@ -20,7 +22,7 @@ public class CounterStrike {
         }
         System.out.println("Ввести кількість фрагів для другого гравця: ");
         int twoFrag = 0;
-        for (;;){
+        while (true){
             if (scanner.hasNextInt()){
                 twoFrag = scanner.nextInt();
                 break;
@@ -31,7 +33,7 @@ public class CounterStrike {
         }
         System.out.println("Ввести кількість фрагів для третього гравця: ");
         int threeFrag = 0;
-        for (;;){
+        while (true){
             if (scanner.hasNextInt()){
                 threeFrag = scanner.nextInt();
                 break;
@@ -42,7 +44,7 @@ public class CounterStrike {
         }
         System.out.println("Ввести кількість фрагів для четвертого гравця: ");
         int fourFrag = 0;
-        for (;;){
+        while (true){
             if (scanner.hasNextInt()){
                 fourFrag = scanner.nextInt();
                 break;
@@ -53,7 +55,7 @@ public class CounterStrike {
         }
         System.out.println("Ввести кількість фрагів для пятого гравця: ");
         int fiveFrag = 0;
-        for (;;){
+        while (true){
             if (scanner.hasNextInt()){
                 fiveFrag = scanner.nextInt();
                 break;
@@ -71,7 +73,7 @@ public class CounterStrike {
         String twoName = teamName2;
         System.out.println("Ввести кількість фрагів для першого гравця: ");
         int firstFrag1 = 0;
-        for (;;){
+        while (true){
             if (scanner.hasNextInt()){
                 firstFrag1 = scanner.nextInt();
                 break;
@@ -82,7 +84,7 @@ public class CounterStrike {
         }
         System.out.println("Ввести кількість фрагів для другого гравця: ");
         int twoFrag1 = 0;
-        for (;;){
+        while (true){
             if (scanner.hasNextInt()){
                 twoFrag1 = scanner.nextInt();
                 break;
@@ -93,7 +95,7 @@ public class CounterStrike {
         }
         System.out.println("Ввести кількість фрагів для третього гравця: ");
         int threeFrag1 = 0;
-        for (;;){
+        while (true){
             if (scanner.hasNextInt()){
                 threeFrag1 = scanner.nextInt();
                 break;
@@ -104,7 +106,7 @@ public class CounterStrike {
         }
         System.out.println("Ввести кількість фрагів для четвертого гравця: ");
         int fourFrag1 = 0;
-        for (;;){
+        while (true){
             if (scanner.hasNextInt()){
                 fourFrag1 = scanner.nextInt();
                 break;
@@ -115,7 +117,7 @@ public class CounterStrike {
         }
         System.out.println("Ввести кількість фрагів для пятого гравця: ");
         int fiveFrag1 = 0;
-        for (;;){
+        while (true){
             if (scanner.hasNextInt()){
                 fiveFrag1 = scanner.nextInt();
                 break;
@@ -139,7 +141,5 @@ public class CounterStrike {
         System.out.println("Середнє арифметичне команди "+ twoName + " = " + midKills1 + " очків");
         System.out.println("Різниця між командами = "+ whoTop);
         System.out.println("Перемогла команда " + victoryName + " набрала " + result + " очків");
-
     }
 }
-
