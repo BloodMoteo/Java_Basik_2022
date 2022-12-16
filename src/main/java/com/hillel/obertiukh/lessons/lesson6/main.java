@@ -1,5 +1,7 @@
 package com.hillel.obertiukh.lessons.lesson6;
 
+import com.hillel.obertiukh.lessons.lesson3.HomeWork;
+
 import java.util.Scanner;
 
 public class main {
@@ -88,6 +90,7 @@ public class main {
             scanner.nextLine();
         }
         */
+        /*
         int num1 = 0;
         int num2 = 1;
         int sum;
@@ -98,8 +101,70 @@ public class main {
             num1 = num2;
             num2 = sum;
         }
+*/
+
+//        timer
+//
+//        int timer = 10;
+//        while (timer > -1){
+//            System.out.println(timer);
+//            if (timer == 0 ){
+//                System.out.println("BOOM!");
+//            }
+//            timer--;
+//        }
+
+//      timer generation number 85 - 100
+//
+//        int timer = 10;
+//        while (timer > -1){
+//            if ((int) (Math.random() * 101) >= 85){
+//                System.out.println("DEFUSE");
+//                break;
+//            }
+//
+//            System.out.println(timer);
+//            if (timer == 0){
+//                System.out.println("BOOM");
+//            }
+//            timer--;
+//        }
+
+//        Обчислити факторіал числа
+//        Scanner scan = new Scanner(System.in);
+//        int N = 0;
+//        while (true) {
+//            if (scan.hasNextInt()) {
+//                N = scan.nextInt();
+//                if (N < 0 || N > 30){
+//                    System.out.println("Please enter number from 0 to 30");
+//                }else {
+//                    break;
+//                }
+//            } else {
+//                System.out.println("Wrong data, try again!");
+//                scan.nextLine();
+//            }
+//        }
+//
+//        int result = 1;
+//        for (int i = 1; i <= N; i++) {
+//            result *= i;
+//        }
+//        System.out.println(result);
 
 
+//        HomeWork
+
+        int counter = 0;
+        for (int i = 1; i < 101; i++) {
+            if ((i == 4) || (i == 9) || (i / 10 == 4) || (i / 10 == 9) || (i % 10 == 4) || (i % 10 == 9)){
+                continue;
+            }
+            System.out.println("shutlle number:" + i);
+            counter++;
+        }
+        System.out.println("count:" + counter);
     }
 
 }
